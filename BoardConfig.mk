@@ -166,8 +166,8 @@ BOARD_AVB_BOOT_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 2
 
 # Decryption support for /data
-TW_INCLUDE_CRYPTO := true
-# TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_CRYPTO := true 
+TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 TW_USE_FSCRYPT_POLICY := 2
@@ -184,7 +184,8 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 # TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
 TW_NO_HAPTICS := true
 
-# Kernel module loading for touch, battery etc
+# Kernel module loading for touch, batter
+y etc
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/prebuilt/modules)\")
 
