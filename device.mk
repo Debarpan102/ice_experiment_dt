@@ -50,6 +50,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl-default.recovery \
     android.hardware.health@2.1-impl.recovery
 
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.boot.avb_version=1.0 \
+	ro.boot.vbmeta.avb_version=1.0
+
 # qcom decryption
 PRODUCT_PACKAGES += \
     qcom_decrypt \
